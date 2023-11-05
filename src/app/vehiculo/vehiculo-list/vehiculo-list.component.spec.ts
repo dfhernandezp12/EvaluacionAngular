@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { VehiculoListComponent } from './vehiculo-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('VehiculoListComponent', () => {
   let component: VehiculoListComponent;
@@ -11,6 +12,7 @@ describe('VehiculoListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[HttpClientModule],
       declarations: [ VehiculoListComponent ]
     })
     .compileComponents();
