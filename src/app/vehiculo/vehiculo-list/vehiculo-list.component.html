@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row border-bottom">
+    <h1 class="title-segundazo">TuSegundazo.com</h1>
+  </div>
+<div class="'row mt-1 border-bottom">
+  <img src="assets/images/comercializacionAutomotores.png">
+</div>
+  <div class="row mt-3">
+    <table class="tabla-vehiculos">
+      <thead class="thead-color">
+         <tr>
+           <th scope="col">#</th>
+           <th scope="col">Marca</th>
+           <th scope="col">Linea</th>
+           <th scope="col">Modelo</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let vehiculo of vehiculos; index as i">
+           <th scope="row">{{ i + 1 }}</th>
+           <td>{{ vehiculo.marca }}</td>
+           <td>{{ vehiculo.linea }}</td>
+           <td>{{ vehiculo.modelo }}</td>
+         </tr>
+      </tbody>
+     </table>
+     <p *ngFor="let conteo of contarVehiculosPorMarca()">
+      {{ conteo }}
+     </p>
+</div>

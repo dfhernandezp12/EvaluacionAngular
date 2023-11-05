@@ -1,0 +1,20 @@
+.title-segundazo {
+  font-family: 'Arial', sans-serif;
+  font-size: 33px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.thead-color {
+  background-color: #333A40;
+  color: white;
+}
+
+.tabla-vehiculos {
+  width: 30%;
+ }
+
+ .tabla-vehiculos tbody tr {
+  border-bottom: 1px solid #ddd;
+ }
